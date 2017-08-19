@@ -170,6 +170,7 @@ function handleEcho(messageId, appId, metadata) {
 }
 
 function handleApiAiAction(sender, action, responseText, contexts, parameters) {
+  console.log('================================================================', parameters);
   switch (action) {
     case 'SayHello':
     sendTextMessage(sender, 'SO MAN WUSUUUUUP? I AM COMING FROM API DUDE');
