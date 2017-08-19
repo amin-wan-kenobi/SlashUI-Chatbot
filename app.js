@@ -171,24 +171,25 @@ function handleEcho(messageId, appId, metadata) {
 
 function handleApiAiAction(sender, action, responseText, contexts, parameters) {
   switch (action) {
-    case 'tell-a-joke':
-      let quick_replies = [{
-          "content_type": "text",
-          "title": "Blonde",
-          "payload": "A Blonde Joke 👱🏻‍♀️"
-        },
-        {
-          "content_type": "text",
-          "title": "Marriage",
-          "payload": "A Marriage one :)"
-        },
-        {
-          "content_type": "text",
-          "title": "Anything",
-          "payload": "Just any Random Stuff"
-        }
-      ];
-      sendQuickReply(sender, responseText, quick_replies);
+    case 'SayHello':
+      sendQuickReply(sender, responseText, 'SO MAN WUSUUUUUP? I AM COMING FROM API DUDE');
+      // let quick_replies = [{
+      //     "content_type": "text",
+      //     "title": "Blonde",
+      //     "payload": "A Blonde Joke 👱🏻‍♀️"
+      //   },
+      //   {
+      //     "content_type": "text",
+      //     "title": "Marriage",
+      //     "payload": "A Marriage one :)"
+      //   },
+      //   {
+      //     "content_type": "text",
+      //     "title": "Anything",
+      //     "payload": "Just any Random Stuff"
+      //   }
+      // ];
+      //sendQuickReply(sender, responseText, quick_replies);
       break;
 	case 'get-weather':	
       const options = {
