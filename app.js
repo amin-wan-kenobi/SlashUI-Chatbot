@@ -207,7 +207,8 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 			sendTextMessage(sender, weather_response);
 			
 		} else {
-			sendTextMessage(sender, 'I couldnt get that');
+      sendTextMessage(sender, 'I couldnt get that FROM API maaaaaa');
+      sendTextMessage(sender, resp);
 			
 		}
       });
