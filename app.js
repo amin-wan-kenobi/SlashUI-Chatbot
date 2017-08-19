@@ -194,7 +194,7 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
       break;
 	case 'weather-action':	
       const options = {
-        url: `http://api.apixu.com/v1/current.json?key=574239cfbb4e43c7a67122908171908&q=${parameters.geo-city}`,
+        url: `http://api.apixu.com/v1/current.json?key=574239cfbb4e43c7a67122908171908&q=${parameters.city}`,
       };
       
       request.get(options, function (error, response) {
